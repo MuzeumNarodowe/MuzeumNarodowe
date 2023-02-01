@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Muzeum Narodowe</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
+    <script>
+      var imageIndex = 0;
+      var images = ["logo.png", "m3.jpg", "m4.jpg"];
+      setInterval(function() {
+          document.getElementById("slideshow").src = images[imageIndex];
+          imageIndex = (imageIndex + 1) % images.length;
+      }, 5000);
+  </script>
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="STRONA.html"><img src="logo.png" alt="logo" class="logo"></a>
+              <li><a href="O_Muzeum.html">O muzeum</a></li>
+              <li><a href="Kolekcja.html">Kolekcja</a></li>
+              <li><a href="Wyda.html">Wydarzenia</a></li>
+              <li><a href="gal.html">Galeria</a></li>
+        
+              <li><a href="Kontakt.html">Kontakt</a></li>
+              <a href="STRONA.html" style="float:right"><div class="languages-item">PL</div></a>
+              <a href="StEN.html" style="float:right"><div class="languages-item">ENG</div></a>
+          </ul>
+        </nav>
+      </header>
+
+     <div id="gl7"></div>
+<div id="te">
+  <img id="slideshow" src="m.jfif" style=" width: 20%; float:right; margin-right: 100px;">
+<p style=" background-color: rgba(233, 226, 226, 0.4); width: 40%; height:70%; font-size: 30px;"> Nazwa muzeum: "Muzeum Narodowe"
+  Adres: "Al. Jerozolimskie 3, Lublin, Polska"
+  Godziny otwarcia: "Otwarte od wtorku do niedzieli w godzinach od 10:00 do 18:00"<br>
+  Ceny biletów: "Bilet normalny kosztuje 20 zł, bilet ulgowy kosztuje 15 zł, bilet rodzinny kosztuje 40 zł."<br>
+  Opis zbiorów: "Muzeum Narodowe zawiera zbiory sztuki polskiej i europejskiej od średniowiecza do współczesności, w tym malarstwo, rzeźby, grafikę i zabytki archeologiczne."<br>
+  Dostępność: "Muzeum jest przystosowane dla osób niepełnosprawnych, dostępne są wózki inwalidzkie"<br>
+  Czas trwania wycieczki: "Wycieczka trwa około 2-3 godzin"<br>
+  Data i godzina rozpoczęcia wycieczki: "Wycieczka rozpocznie się w niedzielę, 31 stycznia o godzinie 10:00"<br>
+  Transport: "Transport do muzeum zapewniony jest autokarem, wyjazd z dworca kolejowego o godzinie 9:00"<br>
+  Przewodnik: "Wycieczkę poprowadzi licencjonowany przewodnik, który opowie o najważniejszych dziełach i historii muzeum."<br></p>
+  
+</div>
+
+
+
+
+
+<div id="stop">
+
+  <footer class="footer">&copy;2023 Kamiński Karol</footer>
+
+</div>
+
+  
+
+
+
+
+    </div>
+
+
+      
+      </form>
+        </body>
+
+      </html>

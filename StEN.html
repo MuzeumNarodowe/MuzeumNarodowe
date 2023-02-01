@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>National Museum</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('email').value = '';
+    document.getElementById('name').value = '';
+    });
+    function validateForm() {
+    var x = document.getElementById("email").value;
+    var y = document.getElementById("name").value;
+    if (x == "" || y == "") {
+    alert("Both fields must be filled out");
+    return false;
+    } else {
+    alert("Notifications about events will be sent to your email");
+    return true;
+    }
+    }
+    </script>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="StEN.html"><img src="logo.png" alt="logo" class="logo"></a>
+            <li><a href="O_MuzeumEN.html">About museum</a></li>
+            <li><a href="KolekcjaEN.html">Collection</a></li>
+            <li><a href="WydaEN.html">Events</a></li>
+            <li><a href="galEN.html">Gallery</a></li>
+            <li><a href="KontaktEN.html">Contact</a></li>
+            
+            <a href="STRONA.html" style="float:right"><div class="languages-item">PL</div></a>
+            <a href="StEN.html" style="float:right"><div class="languages-item">ENG</div></a>
+             
+            
+          </ul>
+        </nav>
+      </header>
+      
+      
+      
+        <h1>Art Museum </h1>
+      
+        
+         
+      
+      
+      
+      
+          <div id="gł">
+      
+      
+      
+      
+          <div id="tekst">Opening days
+            <br>
+            Monday - 12:00-18:00 <br>
+            Tuesday - Friday - 10:00-18:00<br>
+            Saturday - 10:00-20:00<br>
+            Sunday - Closed
+          </div>
+          
+      
+      
+      
+          <div>
+            <form action="#">
+            <label2> Fill out the fields below and you will receive notifications about new events:</label2><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="name">Name and Surname:</label><br>
+            <input type="name" id="name" name="name"><br><br>
+            <input type="submit" value="Send" onclick="return validateForm()">
+            </form>
+            </div>  
+      
+      
+      
+            <div id="stop">
+      
+              <footer class="footer">&copy;2023 Kamiński Karol</footer>
+      
+            </div>
+      
+      
+      
+      
+      
+          </div>
+          </body>
+        </html>
+      

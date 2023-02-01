@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>National Museum</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <script>
+    var imageIndex = 0;
+    var images = ["logo.png", "m3.jpg", "m4.jpg"];
+    setInterval(function() {
+        document.getElementById("slideshow").src = images[imageIndex];
+        imageIndex = (imageIndex + 1) % images.length;
+    }, 5000);
+</script>
+
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="StEN.html"><img src="logo.png" alt="logo" class="logo"></a>
+            <li><a href="O_MuzeumEN.html">About museum</a></li>
+            <li><a href="KolekcjaEN.html">Collection</a></li>
+            <li><a href="WydaEN.html">Events</a></li>
+            <li><a href="galEN.html">Gallery</a></li>
+            <li><a href="KontaktEN.html">Contact</a></li>
+            
+            <a href="STRONA.html" style="float:right"><div class="languages-item">PL</div></a>
+            <a href="StEN.html" style="float:right"><div class="languages-item">ENG</div></a>
+             
+            
+          </ul>
+        </nav>
+      </header>
+
+      <div id="gl7"></div>
+      <div id="te">
+        <img id="slideshow" src="m.jfif" style=" width: 20%; float:right; margin-right: 100px;">
+      <p style=" background-color: rgba(233, 226, 226, 0.4); width: 40%; height:70%; font-size: 30px;"> Name of the museum: "National Museum"
+        Address: "Al. Jerozolimskie 3, Lublin, Poland"
+        Opening hours: "Open Tuesday through Sunday from 10:00 a.m. to 6:00 p.m."<br>
+        Ticket prices: "A regular ticket costs PLN 20, a discounted ticket costs PLN 15, a family ticket costs PLN 40."<br>
+        Description of the collection: "The National Museum contains collections of Polish and European art from the Middle Ages to the present day, including paintings, sculptures, graphics and archaeological relics."<br>
+        Accessibility: "The museum is accessible to people with disabilities, wheelchairs are available"<br>
+        Tour duration: "The tour lasts about 2-3 hours"<br>
+        Tour start date and time: "The tour will start on Sunday, January 31 at 10:00 a.m."<br>
+        Transportation: "Transportation to the museum is provided by bus, departure from the railroad station at 9:00 am"<br>
+        Guide: "The tour will be led by a licensed guide who will talk about the most important works and history of the museum."<br></p>
+        
+      </div>
+      
